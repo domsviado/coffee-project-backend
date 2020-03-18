@@ -12,6 +12,7 @@ router.post('/customers/create', CustomerController.createCustomer);
 router.post('/customers/update', auth, CustomerController.updateCustomer);
 
 router.get('/products', auth, ProductController.getAllProducts);
+router.get('/products/:id', auth, ProductController.getAllProductDetail);
 router.post('/products/create', admin, ProductController.createProduct);
 
 router.post('/orders/create', auth, OrderController.createOrder);
